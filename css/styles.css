@@ -37,6 +37,25 @@ body{
   display: inline-block;
   width:50%;
 }
+.footer-column{
+  font-size: 0;
+  vertical-align: top;
+  display:inline-block;
+  background: grey;
+  width:100%;
+  text-align: center;
+}
+button{
+  width: 200px;
+  height: 40px;
+}
+.footer_info-container{
+
+  padding: 5px;
+  height: 25px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
 
 /**** END MOBILE ****/
 @media screen and (min-width: 600px){
