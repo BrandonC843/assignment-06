@@ -3,96 +3,117 @@
 box-sizing: border-box;
 }
 
-img{
+img {
   width: 100%;
   display: block;
 }
-#app-container{
-  width:100%;
-}
-body{
+
+body {
   font-family: "sans-serif";
 }
-/**** BEGIN MOBILE ****/
-.header-column {
-  vertical-align: top;
+
+.container {
   font-size: 0;
-}
-.header_title-container{
-  width:200px;
-  margin: 0 auto;
-  /*display: inline-block;*/
 }
 
-.header-other-container{
-  vertical-align: top;
-  font-size: medium;
-  text-align: center;
-  color:grey;
+.container > *{
+   font-size: medium;
+   display: inline-block;
+   vertical-align: top;
 }
-.images-column{
-  font-size: 0;
+
+.header-image {
+   width: 100%;
 }
-.images-column img{
-  display: inline-block;
-  width:50%;
+
+.header-image img {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.footer-column{
-  font-size: 0;
-  vertical-align: top;
-  display:inline-block;
-  background: grey;
-  width:100%;
+
+.header-bar{
+  width: 100%;
+  color: lightgrey;
   text-align: center;
 }
-button{
-  width: 200px;
-  height: 40px;
-}
-.footer_info-container{
 
-  padding: 5px;
-  height: 25px;
-  margin-top: 25px;
-  margin-bottom: 20px;
+.image{
+   width: 50%;
+   margin: 0 auto;
+
 }
 
-/**** END MOBILE ****/
-@media screen and (min-width: 600px){
-	/* Exhibit A.2 – Responsive Header Styles (tablet)  */
-.images-column img{
-  width: 50%;
+.search-bar {
+   margin-left: 300px;
+   border: 1px solid grey;
 }
-.header-other-container{
-  display: inline;
-  text-align:right;
-  margin-right: 0 auto;
+.search-bar input{
+   text-align: center;
 }
 
-	.header-column{
-		font-size: 12px;
-	}
-	/*...*/
+.carat {
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   width: 10%;
+}
 
-	.images-column-container{ width: 60%; }
-	.article_synopsis__text-column{
-		width: 40%;
-	}
+@media screen and (min-width: 768px){
 
-@media screen and (min-width: 1000px){
-	/* Exhibit A.3 – Responsive Header Styles (desktop)  */
+.image {
+  width: 33.33%;
+}
+
+.header-image {
+   width: 75%;
+}
+
+.header-bar {
+   width: 25%;
+}
+
+.carat {
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 20px;
+    width: 25%;
+  }
+.carat i {
+   color: #c9c4c4;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.search-bar{
+   margin: 0;
+   text-align: center;
+}
+}
+
+@media screen and (min-width: 992px){
 	.header-column{
 		padding: 70px 0;
 	}
+
   .header-other-container{
     text-align: right;
   }
+
 	.header_title-container{
 		font-size: 54px;
 	}
 
 	.images-column img{
 		width: 25%;
-
 	}
+
+   .search-bar{
+      margin-left: 0;
+      border: none;
+
+   }
 }
