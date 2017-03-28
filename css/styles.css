@@ -44,11 +44,11 @@ body {
 
 }
 
-.search-bar {
+.search_bar {
    margin-left: 300px;
    border: 1px solid grey;
 }
-.search-bar input{
+.search_bar input{
    text-align: center;
 }
 
@@ -82,13 +82,13 @@ body {
     width: 25%;
   }
 .carat i {
-   color: #c9c4c4;
+   color: lightgrey;
     background-color: gray;
     padding: 5px;
     border-radius: 3px;
 }
 
-.search-bar{
+.search_bar{
    margin: 0;
    text-align: center;
 }
@@ -111,7 +111,7 @@ body {
 		width: 25%;
 	}
 
-   .search-bar{
+   .search_bar{
       margin-left: 0;
       border: none;
 
